@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Yummy</title>
+    <!--  -->
+    <link rel="icon" href="assests/images/logo.png">
+    <!-- all CSS hear -->
+
+    <!-- font awesome -->
+
+    <link rel="stylesheet" href="Css-files/all.min.css">
+    <!-- npm -->
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+
+
+    <!--main style sheet  -->
+    <link rel="stylesheet" href="../dist/output.css">
+
+
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="web designer,developer web">
+</head>
+
+<body class="bg-zinc-950">
+    <header></header>
+    <main>
+
+        <section class="bg-zinc-950   flex " id="HOME">
+            <div class="side_nav flex  z-50 ">
+                <div class="nav-list   h-lvh flex flex-col justify-between  p-8 ">
+                    <div class="flex flex-col">
+                        <a href="#Search" class="search opacity-0 relative top-[100px] my-2">Search</a>
+                        <a href="#Categories" class="categ opacity-0 relative top-[100px] my-2">Categories</a>
+                        <a href="#Area" class="area opacity-0 relative top-[100px] my-2">Area</a>
+                        <a href="#Ingredients" class="ingredient opacity-0 relative top-[100px] my-2">Ingredients</a>
+                        <a href="#Contact" class="contact opacity-0 relative top-[100px] my-2">Contact Us</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-globe  m-1"></i>
+
+                        <p class="">Copyright Â© 2019 All Rights<br> Reserved.
+                        </p>
+                    </div>
+                </div>
+                <div class="nav_bar bg-white  flex flex-col  justify-between items-center py-8 ">
+                    <img src="assests/images/logo.png" alt="logo" class="w-14">
+                    <i class="fa-solid fa-grip-lines text-black text-3xl" id="nav_look">
+                        
+                    </i>
+                    <div class=" text-black text-lg flex flex-col">
+                        <i class="fa-solid fa-globe m-1"></i>
+                        <i class="fa-solid fa-share-nodes  m-1"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="main_display w-full py-9 ">
+                <div class="homeMeal container ">
+                    <div class="searchMeal w-full hidden">
+                        <input type="text" placeholder="search by Name" class="ml-14  p-2 border-[1px] border-white bg-transparent rounded-lg w-[85%] md:w-[30%] outline-sky-400  text-white">
+                        <input type="text" placeholder="search by first Letter" class="ml-14  p-2 mb-6 border-[1px] border-white bg-transparent rounded-lg w-[85%] md:w-[30%] outline-sky-400  text-white" maxlength="1">
+                    </div>
+                    <div class="  ml-6 row " id="Cards-home">
+                        <!-- <div class="outerCard w-full md:w-4/12 lg:w-3/12  p-3 group">
+                            <div class="cardMeal relative  overflow-hidden">
+                                <img src="assests/images/meal/rwuyqx1511383174.jpg" class="w-full rounded-xl" alt="...">
+                                <div class="cardLayout p-5  translate-y-full group-hover:-translate-y-0 group-hover:duration-[1s]">
+                                    <h3 class="">corba</h3>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <form class="hidden">
+                        <div class="contact_us    fixed top-0 left-[10px] bottom-0 right-0   w-full h-lvh  flex flex-col gap-8  justify-center items-center " id="CONTACT">
+                            <div class="w-10/12  flex flex-wrap gap-6">
+                                <div class="w-[85%] md:w-[40%] ml-14 ">
+                                    <input type="text" placeholder="Enter Your Name" class=" mb-2 p-2 border-0 outline-sky-400  bg-white rounded-lg w-full   text-black" id="Name">
+                                    <p class=" p-3 bg-[#f8d7da] text-[#842029] rounded-lg w-full hidden">Special characters and numbers not allowed</p>
+                                </div>
+                                <div class="w-[85%] md:w-[40%] ml-14">
+                                    <input type="text" placeholder="Enter Your Email" class=" mb-2 p-2 border-0  bg-white rounded-lg w-full outline-sky-400  text-black" id="Email">
+                                    <p class=" p-3 bg-[#f8d7da] text-[#842029] rounded-lg w-full hidden">Email not valid *exemple@yyy.zzz</p>
+                                </div>
+                                <div class="w-[85%] md:w-[40%] ml-14">
+                                    <input type="number" placeholder="Enter Your phone" class=" mb-2 p-2 border-0  bg-white rounded-lg w-full outline-sky-400  text-black" id="phone">
+                                    <p class=" p-3 bg-[#f8d7da] text-[#842029] rounded-lg w-full hidden">Enter valid Phone Number</p>
+                                </div>
+                                <div class="w-[85%] md:w-[40%] ml-14">
+                                    <input type="number" placeholder="Enter Your Age" class=" mb-2 p-2 border-0  bg-white rounded-lg w-full outline-sky-400  text-black" id="age">
+                                    <p class=" p-3 bg-[#f8d7da] text-[#842029] rounded-lg w-full hidden">Enter valid age</p>
+                                </div>
+                                <div class="w-[85%] md:w-[40%] ml-14">
+                                    <input type="text" placeholder="Enter Your password" class=" mb-2 p-2 border-0  bg-white rounded-lg w-full outline-sky-400  text-black" id="password">
+                                    <p class=" p-3 bg-[#f8d7da] text-[#842029] rounded-lg w-full hidden">Enter valid password *Minimum eight characters, at least one letter and one number:</p>
+                                </div>
+                                <div class="w-[85%] md:w-[40%] ml-14">
+                                    <input type="text" placeholder="Repassword" class=" mb-2 p-2 border-0  bg-white rounded-lg w-full outline-sky-400  text-black" id="Repassword">
+                                    <p class=" p-3 bg-[#f8d7da] text-[#842029] rounded-lg w-full hidden">Enter valid repassword</p>
+                                </div>
+                            </div>
+                            <button type="submit" disabled class="bg-transparent   p-2 border-[1px] border-red-500 text-red-700 rounded-lg" id="mybtn">submit</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+        <section class="mailDetails container overflow-auto min-h-lvh   hidden" id="DETAILS">
+            <!-- <div class="row ml-7 items-start">
+                <div class="text-right text-xl pt-2 text-white w-full  ">
+                    <i class="fa-solid fa-xmark cursor-pointer" id="closeINFO"></i>
+                </div>
+                <div class="img_side w-full md:w-4/12 p-4 ">
+                    <img src="assests/images/meal/txsupu1511815755.jpg" class="w-full rounded-xl mb-2">
+                    <h2 class="text-white text-3xl">Beef and Mustard Pie</h2>
+                </div>
+                <div class="info_side  w-full md:w-8/12  ">
+                    <h2 class="text-white  text-3xl font-bold">Instructions</h2>
+                    <p class="text-white p-4">Preheat the oven to 150C/300F/Gas 2. Toss the beef and flour together in a bowl with some salt and black pepper. Heat a large casserole until hot, add half of the rapeseed oil and enough of the beef to just cover the bottom of the
+                        casserole. Fry until browned on each side, then remove and set aside.
+                    </p>
+                    <h3 class="text-white text-3xl font-bold my-4"><span class="">Area :</span></h3>
+                    <h3 class="text-white text-3xl font-bold my-4"><span class="">Category :</span></h3>
+                    <h3 class="text-white text-3xl font-bold my-4"><span class=" ">Recipes :</span></h3>
+                    <ul class="text-[#055160] row gap-3 m-4 " id="rec_ING">
+                        <li class="px-3 py-2 bg-[#cff4fc] rounded-lg ">gfgmmgdg</li>
+                    </ul>
+                    <h3 class="text-white text-3xl font-bold my-4">Tags :</h3>
+                    <ul class="text-[#842029] row gap-3 my-7 " id="tag_ING">
+                        <li class="px-3 py-2 bg-[#f8d7da] rounded-lg ">soup</li>
+                    </ul>
+                    <a href="# " class="text-white bg-[#1d9f62] hover:bg-[#157347] px-3 py-2 text-lg rounded-lg ">source</a>
+                    <a href="# " class="text-white  bg-[#cd4350] hover:bg-[#bb2d3b] px-3 py-2 text-lg rounded-lg ml-3">youtube</a>
+                </div>
+            </div> -->
+        </section>
+        <section class="loadingPage fixed top-0 bottom-0 left-0 right-0 hidden items-center ">
+            <div class="container text-center "><span class="loader "></span></div>
+        </section>
+
+        <footer></footer>
+        <!-- -------------------------------------------------------------------------------------- -->
+        <!-- js part -->
+        <script src=" js-files/jquery-3.7.1.js "></script>
+
+        <script type="module" src="js-files/index.js "></script>
+</body>
+
+</html>
+
+</html>
+
+</html>

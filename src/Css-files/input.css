@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .row {
+        @apply flex flex-wrap items-center;
+    }
+    .side_nav {
+        @apply fixed top-0 -left-[273.333px] bottom-0 bg-zinc-950 text-white;
+    }
+    .cardLayout {
+        @apply absolute top-0 left-0 right-0 bottom-0 w-full bg-white/80 rounded-xl text-2xl font-semibold;
+    }
+    .mailDetails {
+        @apply fixed top-0 left-0 right-0 bottom-0 bg-zinc-950;
+    }
+    .contact_us {
+        @apply bg-zinc-950;
+    }
+    /* .cont_input {
+        @apply ml-14 p-2 border-[1px] border-white bg-transparent rounded-lg w-[85%] outline-sky-400 text-white;
+    } */
+}
+
+
+/* @media screen(md) {} */
+
+
+/* 
+.toggle-checkbox:checked {
+    @apply: right-0 border-green-400;
+    right: 0;
+    border-color: #050736;
+}
+
+.toggle-checkbox:checked+.toggle-label {
+    @apply: bg-green-400;
+    background-color: #335a8d;
+} */
+
+
+/* ____________________loadingPage__________________________________________________- */
+
+.loadingPage {
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999999;
+}
+
+.loader {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* _____________________________________________________________________ */
