@@ -198,8 +198,8 @@ export default class Home {
 
     }
     async searchMeal() {
+        $('.mailDetails').addClass('hidden');
         console.log($('input').eq(1));
-
         $('input').eq(0).keyup(function(e) {
             console.log($('input').eq(0).val());
             let nameVal = $('input').eq(0).val();
