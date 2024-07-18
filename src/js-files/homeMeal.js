@@ -216,6 +216,7 @@ export default class Home {
 
     }
     async formRegix() {
+        $('.mailDetails').addClass('hidden');
         console.log($('.contact_us input'));
         $('.contact_us input').keyup(function() {
             validateInputs(this)
